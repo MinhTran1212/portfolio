@@ -8,13 +8,12 @@ import { FileText, Mail, Check, ArrowUpRight, ChevronDown, GraduationCap, Calend
 function BrandLogo({ className = "" }: { className?: string }) {
   return (
     <div className={`inline-flex items-center select-none ${className}`}>
-      {/* Circular Profile Avatar 2 Emblem */}
+      {/* Circular Profile Avatar Emblem */}
       <div className="relative w-6 h-6 rounded-full overflow-hidden border border-neutral-700/80 bg-neutral-900 shadow-sm transition-transform duration-200 hover:scale-105">
         <Image
-          src="/avatar2.jpg"
-          alt="Nhat Minh Tran Logo"
+          src="/avatar.jpg"
+          alt="Nhat Minh Tran"
           fill
-          sizes="24px"
           className="object-cover object-top"
           priority
         />
@@ -84,7 +83,7 @@ export default function Home() {
       title: "Video Processing Engine (Youtube Clone)",
       subtitle: "Cloud-native transcoding microservice",
       description: "Distributed pipeline utilizing FFmpeg workers and asynchronous pub/sub messaging to handle real-time video encoding at scale.",
-      image: "/project-1.png",
+      image: "/project-1.jpg",
       tags: ["TypeScript", "Docker", "GCP", "Next.js", "Firebase"],
       github: "https://github.com/MinhTran1212",
     },
@@ -92,7 +91,7 @@ export default function Home() {
       title: "Personal Nutrition Management System",
       subtitle: "High-performance relational REST service",
       description: "Health tracking backend engineered with strict schema migrations, JWT authorization, and automated integration suites.",
-      image: "/project-2.png",
+      image: "/project-2.jpg",
       tags: ["TypeScript", "PostgreSQL", "Prisma", "Docker", "Vitest/Supertest"],
       github: "https://github.com/MinhTran1212",
     },
@@ -100,7 +99,7 @@ export default function Home() {
       title: "Personalized Academic Productivity Management Platform",
       subtitle: "Academic progress & productivity dashboard",
       description: "A focused workflow system for logging study sessions, tracking mastery across core topics, and visualizing weekly learning velocity.",
-      image: "/project-3.png",
+      image: "/project-3.jpg",
       tags: ["Express", "TypeScript", "PostgreSQL", "Node.js"],
       github: "https://github.com/MinhTran1212",
     },
@@ -219,7 +218,6 @@ export default function Home() {
                   src="/avatar.jpg"
                   alt="Nhat Minh Tran"
                   fill
-
                   className="object-cover object-top"
                   priority
                 />
@@ -309,17 +307,15 @@ export default function Home() {
               >
                 <div>
                   {/* Top Image Preview Area */}
-                  <div className="relative w-full h-48 sm:h-52 bg-white overflow-hidden border-b border-neutral-800 flex items-center justify-center p-4">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={proj.image}
-                        alt={proj.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        className="object-contain transition-transform duration-500 group-hover:scale-105"
-                        priority={idx === 0}
-                      />
-                    </div>
+                  <div className="relative w-full h-48 sm:h-52 bg-white overflow-hidden border-b border-neutral-800 flex items-center justify-center p-6">
+                    <img
+                      src={proj.image}
+                      alt={proj.title}
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        (e.target as HTMLElement).style.display = "none";
+                      }}
+                    />
                   </div>
 
                   {/* Card Content */}
