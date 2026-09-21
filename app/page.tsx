@@ -229,11 +229,9 @@ export default function Home() {
             {/* About Text + Technology Grid */}
             <div className="flex flex-col gap-5 text-left flex-1">
               <p className="text-neutral-300 leading-relaxed text-base sm:text-lg font-light">
-                I am a Computer Science undergraduate focused on building scalable backend architectures, 
-                distributed event pipelines, and robust data systems. I enjoy solving complex problems, 
-                fine-tuning performance, and turning ambitious concepts into clean, dependable software.
-              </p>
+I am a Software Engineer with a strong interest in Full-Stack Engineering, Cloud Computing, and DevOps. I enjoy designing software architectures, building scalable applications, and understanding how different components work together to create reliable and efficient systems.              </p>
 
+              <p className="text-neutral-300 leading-relaxed text-base sm:text-lg font-light">I am particularly interested in the intersection of application development and infrastructure — from designing clean backend architectures and distributed systems to deploying, monitoring, and optimizing applications in the cloud. I enjoy solving complex engineering problems and turning ideas into well-structured, maintainable, and production-ready software.</p>
               <div className="flex flex-col gap-3 pt-3">
                 <p className="text-neutral-400 text-xs sm:text-sm font-light">
                   Here are a few technologies I&apos;ve been working with recently:
