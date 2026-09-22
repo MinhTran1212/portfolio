@@ -86,7 +86,7 @@ export default function Home() {
       description: "Distributed pipeline utilizing FFmpeg workers and asynchronous pub/sub messaging to handle real-time video encoding at scale.",
       image: "/project-1.png",
       tags: ["TypeScript", "Docker", "GCP", "Next.js", "Firebase"],
-      github: "https://github.com/MinhTran1212",
+      github: "https://github.com/MinhTran1212/youtube-clone",
     },
     {
       title: "Personal Nutrition Management System",
@@ -94,7 +94,7 @@ export default function Home() {
       description: "Health tracking backend engineered with strict schema migrations, JWT authorization, and automated integration suites.",
       image: "/project-2.png",
       tags: ["TypeScript", "PostgreSQL", "Prisma", "Docker", "Vitest/Supertest"],
-      github: "https://github.com/MinhTran1212",
+      github: "https://github.com/MinhTran1212/Calories-Tracker",
     },
     {
       title: "Personalized Academic Productivity Management Platform",
@@ -102,7 +102,7 @@ export default function Home() {
       description: "A focused workflow system for logging study sessions, tracking mastery across core topics, and visualizing weekly learning velocity.",
       image: "/project-3.png",
       tags: ["Express", "TypeScript", "PostgreSQL", "Node.js"],
-      github: "https://github.com/MinhTran1212",
+      github: "https://github.com/MinhTran1212/StudyTracker",
     },
   ];
 
