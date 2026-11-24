@@ -69,14 +69,18 @@ export default function Home() {
   };
 
   const technologies = [
+    "TypeScript",
     "Next.js",
     "React",
-    "TypeScript",
+    "NestJS",
+    "Node.js",
+    "Prisma",
     "PostgreSQL",
+    "Supabase",
     "Docker",
     "Google Cloud Platform",
-    "Git",
     "MongoDB",
+    "Git",
   ];
 
   const projects = [
@@ -89,7 +93,7 @@ export default function Home() {
       github: "https://github.com/MinhTran1212/youtube-clone",
     },
     {
-      title: "Personal Nutrition Management System",
+      title: "Nutrition Tracker",
       subtitle: "High-performance relational REST service",
       description: "Health tracking backend engineered with strict schema migrations, JWT authorization, and automated integration suites.",
       image: "/project-2.png",
@@ -97,12 +101,12 @@ export default function Home() {
       github: "https://github.com/MinhTran1212/Calories-Tracker",
     },
     {
-      title: "Personalized Academic Productivity Management Platform",
-      subtitle: "Academic progress & productivity dashboard",
-      description: "A focused workflow system for logging study sessions, tracking mastery across core topics, and visualizing weekly learning velocity.",
-      image: "/project-3.png",
-      tags: ["Express", "TypeScript", "PostgreSQL", "Node.js"],
-      github: "https://github.com/MinhTran1212/StudyTracker",
+      title: "Ascend",
+      subtitle: "Progressive overload & AI workout tracker",
+      description: "Full-stack gym training platform with progressive overload tracking, Supabase JWT auth, and a Gemini AI workout planner.",
+      image: "/ascend-logo.png",
+      tags: ["TypeScript", "NestJS", "Next.js", "Prisma", "PostgreSQL", "Gemini API"],
+      github: "https://github.com/MinhTran1212/Gym-Progressive-Overload-Project",
     },
   ];
 
